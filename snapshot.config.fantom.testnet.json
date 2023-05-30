@@ -1,0 +1,10 @@
+{
+  "provider": "https://rpc.testnet.fantom.network/",
+  "contractAddress": "0xc40cdecd749645308d5f6e64f4140aa0ea60b132",
+  "fromBlock": 6552532,
+  "toBlock": "latest",
+  "format": "json",
+  "blocksPerBatch": 2500,
+  "delay": 0,
+  "checkIfContract": "yes"
+}
