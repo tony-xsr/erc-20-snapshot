@@ -7,11 +7,16 @@ This command-line utility creates a snapshot of any ERC20 token in JSON or CSV f
 - Tested to work with Infura.
 
 ## Getting Started
+Package your Node.js project into an executable
 
 ```
-npm install erc20-snapshot -g
+npm install -g pkg
 ```
 
+```
+pkg index.js -o erc20-snapshot
+```
+ 
 ### CLI Arguments
 
 None. Prompts for user input and produces a configuration file on the first run.
@@ -32,10 +37,13 @@ erc20-snapshot
 
 ## Configuration File / Prompt Parameters
 
+create your snapshot config :
+`snapshot.config.json`
+
 ```json
 {
-  "provider": "https://mainnet.infura.io/v3/<key>",
-  "contractAddress": "",
+  "provider": "https://rpc.testnet.fantom.network/",
+  "contractAddress": "token contract address ",
   "fromBlock": 0,
   "toBlock": "latest",
   "format": "json",
